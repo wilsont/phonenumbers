@@ -83,6 +83,12 @@ func TestParse(t *testing.T) {
 			expectedNum: 89009965,
 			region:      "SG",
 		},
+		{
+			input:       "09940135027",
+			err:         nil,
+			expectedNum: 9940135027,
+			region:      "MM",
+		},
 	}
 
 	for i, test := range tests {
@@ -1302,7 +1308,7 @@ func TestGetTimeZonesForPrefix(t *testing.T) {
 		},
 		{
 			num:              "+61491570156",
-			expectedTimeZone: "Australia/Adelaide",
+			expectedTimeZone: "Australia/Sydney",
 		},
 		{
 			num:              "+61255501234",
