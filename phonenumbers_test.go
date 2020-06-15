@@ -83,6 +83,12 @@ func TestParse(t *testing.T) {
 			expectedNum: 89009965,
 			region:      "SG",
 		},
+		{
+			input:       "09940135027",
+			err:         nil,
+			expectedNum: 9940135027,
+			region:      "MM",
+		},
 	}
 
 	for i, test := range tests {
